@@ -28,7 +28,7 @@
 * Blank spaces cannot be used in variable names.
 * Java keywords cannot be used as variable names.
 * Variable names are case-sensitive.
-* There is no limit on the length of a variable name but by convention, it should be between 4 to 15 chars.
+* There is no limit on the length of a variable name but by convention, it should be between 4 and 15 chars.
 * Variable names always should exist on the left-hand side of assignment operators.
 
 ### Datatypes
@@ -48,3 +48,51 @@ There are two types of data in java
 2. Derived Datatypes 
     * Array
     * string 
+
+### Taking input 
+ To take input we need scanner class, so we have to import the scanner class 
+ ```java
+//importing scanner class
+ import java.util.Scanner;
+
+public class input{
+    public static void main(String[] args) {
+        // creating object of scanner class
+        Scanner sc = new Scanner(System.in);
+        
+        // using the scanner class methods to take the input
+        int n = sc.nextInt();
+        float a = sc.nextFloat();
+    }
+}
+
+ ```
+ ***% Operator only works with floats and doubles***
+ 
+### Strings 
+ String is basically the group of characters, or it is the character array
+ 
+***Strings Are immutable***
+
+String is a class having many methods 
+
+```java
+import java.util.Scanner;
+
+class Strings {
+    Scanner sc= new Scanner(System.in);
+    // creating strings 
+    String str1 = "Akshay";
+    String str2 = new String("Learning Java");
+
+    //taking string input
+
+    String s = sc.next();
+    // next() will take input only up to space. i.e. it will not read whole line but only first word
+    string s1 = sc.nextLine();
+    // nextLine() will take whole line as input 
+    
+
+}
+```
+
