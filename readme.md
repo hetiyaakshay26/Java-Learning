@@ -96,3 +96,23 @@ class Strings {
 }
 ```
 
+#### String Methods
+
+```java
+
+public class StrMethods {
+    public static void main(String[] args) {
+        String str = "Akshay Hetiya";
+
+        // to get the length of the string
+        int len = str.length();
+
+        //to get the character at the given index 
+        System.out.println(str.charAt(2));
+
+        //to get the index of first occurance of character in the string 
+        int index = str.indexOf('s');
+
+    }
+}
+```
